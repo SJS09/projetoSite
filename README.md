@@ -1,7 +1,7 @@
 # projetoSite
 Site feito em sala - feito por Samuel e Gabriela
 ## Tarefas
-- [ ] Heador
+- [x] Heador
 - [ ] Apresentação
 - [ ] Projetos
 - [ ] Orçamento
