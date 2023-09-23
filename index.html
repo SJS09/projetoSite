@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <script src="./assets/CSS/js/script.js" defer></script>
 </head>
 <body>
     
@@ -18,8 +19,12 @@
     </header>
     
     <section id="secao-apresentacao">
-        
-        <img src="https://avatars.githubusercontent.com/u/73263820?v=4" alt="Foto do Programador Samuel um dos criadores do site">
+    <div class="img1">
+                <img src="https://avatars.githubusercontent.com/u/73263820?v=4" alt="Foto do Programador Samuel um dos criadores do site">
+    </div>
+    <div class="img2">
+        <img src="https://avatars.githubusercontent.com/u/73263820?v=4" alt="Foto do Programador Gabriela um dos criadores do site">
+    </div>
         <div>
             <h2>Mauris imperdiet consectetur massa vitae.</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi sint vel repudiandae, ea, ullam vitae recusandae odit incidunt, culpa aspernatur. Ipsam atque maiores quaerat perferendis dolor eveniet impedit dolorum.</p>
@@ -27,7 +32,82 @@
     </div>
     
 </section>
+<section id="secao-projetos">
+    <ul>
+        <li>
+            <div class="card">
+                <div class= "card-image-wrapper">
+                    <img src="https://media.istockphoto.com/id/1428649262/pt/foto/bookshelf-background-in-interior.jpg?s=1024x1024&w=is&k=20&c=KWJmUfP4yvkoN9VI9I4GwD1iObmb5RYyj5fm5IfHEAQ="alt="">
 
+            </div>
+            <h2>Titulo do Projeto</h2>
+            <h3>Subtitulo do Projeto</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illum sapiente quasi at eum molestias, necessitatibus aperiam autem ipsam voluptate id amet soluta voluptatum neque?</p>
+            <a href="#" class="botao">Detalhes</a>
+        </li>
+        <li>
+            <div class="card">
+                <div class= "card-image-wrapper">
+                    <img src="https://media.istockphoto.com/id/1428649262/pt/foto/bookshelf-background-in-interior.jpg?s=1024x1024&w=is&k=20&c=KWJmUfP4yvkoN9VI9I4GwD1iObmb5RYyj5fm5IfHEAQ="alt="">
+                    
+            </div>
+            <h2>Titulo do Projeto</h2>
+            <h3>Subtitulo do Projeto</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illum sapiente quasi at eum molestias, necessitatibus aperiam autem ipsam voluptate id amet soluta voluptatum neque?</p>
+            <a href="#" class="botao">Detalhes</a>
+        </li>
+        <li>
+            <div class="card">
+                <div class= "card-image-wrapper">
+                    <img src="https://media.istockphoto.com/id/1428649262/pt/foto/bookshelf-background-in-interior.jpg?s=1024x1024&w=is&k=20&c=KWJmUfP4yvkoN9VI9I4GwD1iObmb5RYyj5fm5IfHEAQ="alt="">
+                    
+            </div>
+            <h2>Titulo do Projeto</h2>
+            <h3>Subtitulo do Projeto</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illum sapiente quasi at eum molestias, necessitatibus aperiam autem ipsam voluptate id amet soluta voluptatum neque?</p>
+            <a href="#" class="botao">Detalhes</a>
+        </li>
+    </ul>
+</section>
+
+<section id="secao-orçamento">
+    <h2>Simulando o orçamento no site</h2>
+    <form action="">
+        <label for=""></label>
+        <input type="text"id="nome">
+
+        <label for="qtde de paginas"></label>
+        <input type="number" min="1"id="qtde">
+
+        <select name="tipo" id="tipo">
+            <option value="1">estatico</option>
+            <option value="2">dinâmico</option>
+
+
+        </select>
+
+        <div>   
+
+        </div class = "" >
+        <label for="layout">precisa de layout?</label>
+        <input name = "layout" type="radio" id ="layout_sim">
+        <label for="layout_sim">sim, preciso</label>
+        <input name = "layout" type="radio" id ="layout_não">
+        <label for="layout_não">não, já tenho</label>
+
+
+
+        <input type="checkbox" id ="js">
+        <label for="js">meu site precisa de javascript</label>
+
+       
+        <label for="prazo">prazos</label>
+        <input type = "range" id ="prazo" min="2" max="10">
+       
+    </form>
 
 </body>
 </html>
