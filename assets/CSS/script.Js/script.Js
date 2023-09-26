@@ -24,13 +24,13 @@ campoJs.addEventListener("change", calcular)
 
 function calcular() {
     let qtde = campoQtde.value
-    let valor = qtde * 100
+    let valor = qtde * 19
 
-    if (campoTipo.value == 2) valor += 1000
+    if (campoTipo.value == 2) valor = -2
 
-    if (campoLayoutSim.checked) valor += qtde * 50
+    if (campoLayoutSim.checked) valor -= valor * 0.10
 
-    if (campoJs.checked) valor *= valor * 1.1
+    if (campoJs.checked) valor *= valor * 0.5
 
     let taxaDeUrgencia = 1 - campoPrazo.value * 0.05
     valor *= 1 + taxaDeUrgencia

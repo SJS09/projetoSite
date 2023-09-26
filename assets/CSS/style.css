@@ -70,10 +70,10 @@ span{
 #secao-apresentacao{
     margin: 0;
     padding: 0;
-    display: flex;
     height: 100%;
     padding: 6.8rem ;
-    gap: 16.5rem;
+    display: flex;
+    flex-direction: column;
     
 }
 #secao-apresentacao img{
@@ -91,10 +91,15 @@ span{
 }
 
 #secao-apresentacao div{
-    max-width: 100%;
+    max-width: 60%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
 
 }
 #secao-apresentacao h2{
+
     width: 519px;
     height: 20vh;
     flex-shrink: 0;
@@ -105,12 +110,12 @@ span{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 #secao-apresentacao h3{
-    width: 25.4375rem;
-    height: 3.1875rem;
+    width: 30.625rem;
     flex-shrink: 0;
     color: #000;
     font-family: Paytone One;
@@ -118,7 +123,8 @@ span{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-            
+    padding-inline-end: left;
+  
 }
 
 #secao-apresentacao p{
@@ -131,28 +137,32 @@ span{
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 30px;
+    align-content: space-between;
 
 }
 
 #secao-apresentacao a{
 
-    display: inline-flex;
-    padding: 8px 16px;
-    align-items: center;
-    gap: 8px;
+    display:inline-table;
+    padding: 9px 18px;
+    gap: 15px;
     border-radius: 7px;
     background: rgba(238, 118, 118, 0.65);
+    
+
+
 }
 
 
-#secao-projeto{
+#secao-projeto {
 
     flex-shrink: 0;
     max-width: 100%;
     padding: 3rem;
     height: 100vh;
     display: block;
+
 }
 
 
@@ -198,7 +208,7 @@ span{
 
 .card h2 {
     color: #FFF;
-    font-size: 1.5rem;
+    
 }
 
 .card h3 {
@@ -217,9 +227,22 @@ span{
     width: 55rem;
     line-height: 30px;
     background: (160, 11, 11, 0.65);
+    color: black;
+
+}
+
+#secao-orcamento img{
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 1rem;
     
 
 }
+
+
 
 #secao-orçamento h2{
 
@@ -282,3 +305,4 @@ input focus{
 
         border: solid 1px #2a1c8a;
 }
+
