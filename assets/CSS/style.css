@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 :root{
@@ -70,21 +71,35 @@ span{
 #secao-apresentacao{
     margin: 0;
     padding: 0;
-    height: 100%;
+    width: 1280px;
+    height: 832px;
     padding: 6.8rem ;
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 3rem;
+
     
+}
+#secao-apresentacao h2{
+
+    width: 519px;
+    height: 106px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 #secao-apresentacao img{
     
-    display: flex;
+
     height: 267px;
     width: 267px;
     border-radius: 100%;
     gap: 16.5rem;
     column-gap: 16.5rem;
-    flex-direction: column;
+
     padding-bottom: 10px;
     
 
@@ -98,21 +113,6 @@ span{
     align-items: flex-start;
 
 }
-#secao-apresentacao h2{
-
-    width: 519px;
-    height: 20vh;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    flex-direction: column;
-}
 
 #secao-apresentacao h3{
     width: 30.625rem;
@@ -123,22 +123,19 @@ span{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-inline-end: left;
+
   
 }
 
 #secao-apresentacao p{
-    width: 519px;
-    height: 20vh;
-    flex-shrink: 0;    
+    padding-top: 150px;
     color: #000;
     text-align: justify;
     font-family: Inter;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    align-content: space-between;
+    line-height: normal;
 
 }
 
@@ -157,18 +154,22 @@ span{
 
 #secao-projeto {
 
+    top: 50rem;
+    width: 1280px;
+    height: 832px;
     flex-shrink: 0;
-    max-width: 100%;
-    padding: 3rem;
-    height: 100vh;
     display: block;
+    box-sizing: border-box;
+    
 
 }
 
 
 .card {
-    max-width: 313px;
+    box-sizing: border-box;
+    width: 313px;
     height: 521px;
+    flex-shrink: 0;
     position: relative;
     cursor: pointer;
 }
@@ -176,6 +177,14 @@ span{
 .card:hover .card-content{
     opacity: 1;
     transform: translateY(0);
+}
+#secao-projetos{
+    font-family: var(--font-title);
+    background-color:rgba(238, 118, 118, 0.65);
+
+}
+.botao{
+    border-radius: 5rem;
 }
 
 #secao-projetos ul {
@@ -199,7 +208,7 @@ span{
     gap: 1rem;
     align-items: flex-start;
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: .5rem;
     opacity: 0;
     transform: translateY(2rem);
@@ -224,10 +233,12 @@ span{
     padding: left;
     padding: 12rem;
     height: 100%;
-    width: 55rem;
+   
     line-height: 30px;
-    background: (160, 11, 11, 0.65);
+    background-color:rgba(238, 118, 118, 0.65);
     color: black;
+    font-family:var(--font-title);
+
 
 }
 
@@ -241,7 +252,6 @@ span{
     
 
 }
-
 
 
 #secao-orçamento h2{
