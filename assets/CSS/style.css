@@ -68,21 +68,19 @@ span{
     background-color: rgba(241, 41, 41, 0.65);
 }
 
-#secao-apresentacao{
+#secao-apresentacao {
     margin: 0;
     padding: 0;
     width: 1280px;
     height: 832px;
-    padding: 6.8rem ;
+    padding: 6.8rem;
     padding-bottom: 3rem;
-
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide a seção em duas colunas */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
 }
-#secao-apresentacao h2{
 
-    width: 519px;
-    height: 106px;
-    flex-shrink: 0;
+#secao-apresentacao h2 {
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -91,43 +89,29 @@ span{
     font-weight: 700;
     line-height: normal;
 }
-#secao-apresentacao img{
-    
 
+#secao-apresentacao img {
     height: 267px;
     width: 267px;
     border-radius: 100%;
-    gap: 16.5rem;
-    column-gap: 16.5rem;
-
     padding-bottom: 10px;
-    
-
 }
 
-#secao-apresentacao div{
+#secao-apresentacao div {
     max-width: 60%;
-    display: flex;
     gap: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-
 }
 
-#secao-apresentacao h3{
-    width: 30.625rem;
-    flex-shrink: 0;
+#secao-apresentacao h3 {
     color: #000;
     font-family: Paytone One;
     font-size: 27px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-  
 }
 
-#secao-apresentacao p{
+#secao-apresentacao p {
     padding-top: 150px;
     color: #000;
     text-align: justify;
@@ -136,21 +120,14 @@ span{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
-#secao-apresentacao a{
-
-    display:inline-table;
+#secao-apresentacao a {
     padding: 9px 18px;
     gap: 15px;
     border-radius: 7px;
     background: rgba(238, 118, 118, 0.65);
-    
-
-
 }
-
 
 #secao-projeto {
 
