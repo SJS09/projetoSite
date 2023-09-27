@@ -41,5 +41,5 @@ function calcular() {
 
     resultado.innerText = 'R$ ${valor}'
 
-    document.getElementById('Resultado').innerText = `R$ ${valor}`;
+    document.getElementById('Resultado').innerText = `R$ ${valor.toFixed(2)}` ;
 }
