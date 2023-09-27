@@ -26,15 +26,20 @@ function calcular() {
     let qtde = campoQtde.value
     let valor = qtde * 19
 
-    if (campoTipo.value == 2) valor = -2
+    if (campoTipo.value == 1) valor += -2
+       
 
     if (campoLayoutSim.checked) valor -= valor * 0.10
+       
 
-    if (campoJs.checked) valor *= valor * 0.5
+    if (campoJs.checked) valor -= valor * 0.05
+     
 
     let taxaDeUrgencia = 1 - campoPrazo.value * 0.05
     valor *= 1 + taxaDeUrgencia
 
 
     resultado.innerText = 'R$ ${valor}'
+
+    document.getElementById('Resultado').innerText = `R$ ${valor}`;
 }
