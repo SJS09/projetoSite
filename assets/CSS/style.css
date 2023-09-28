@@ -25,6 +25,57 @@ header{
     padding-top: 7.25rem;
 
 }
+    #menu-icon{
+        font-family: "Paytone one";
+
+        color: black;
+        text-shadow: #000 2px 2px 2px;
+        position: fixed;
+        z-index: 10;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+    }
+
+    #menu {
+        color: black;
+        font-family: "Paytone one";
+        position: fixed;
+        background-color: pink;
+        height: 100vh;
+        padding: 3rem;
+        z-index: 9;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 1s;
+    }
+
+    #menu a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    #menu.open {
+        transform: translateX(0);
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    #menu li{
+        padding: 1rem;
+        border-radius: .5rem;
+        transition: background-color .5s;
+        color: black; 
+    }
+
+    #menu li:hover {
+        background-color: #EE7676;
+    }
+
   /*PSEUDO-ELEMENTO*/
   header::before{
     content: '';
@@ -131,7 +182,7 @@ span{
 
 #secao-projeto {
 
-    top: 50rem;
+    
     width: 1280px;
     height: 832px;
     flex-shrink: 0;
@@ -168,7 +219,7 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .card-image-wrapper{
@@ -206,17 +257,18 @@ span{
 }
 
 #secao-orçamento {
-
-    padding: left;
     padding: 12rem;
-    height: 100%;   
+    height: 100%;
     line-height: 30px;
-    background-color:rgba(238, 118, 118, 0.65);
+    background-color: rgba(238, 118, 118, 0.65);
     color: black;
-    font-family:var(--font-title);
-
-
+    font-family: var(--font-title);
+    position: relative;
+    border-radius: 25%;
 }
+
+
+
 
 #secao-orçamento img{
     
@@ -236,7 +288,7 @@ span{
     padding: left;
     padding-bottom: 2.5rem;
     flex-shrink: 0;
-    color:#EE7676;
+    color:black;
     font-family: Paytone One;
     font-size: 2rem;
     font-style: normal;
@@ -245,13 +297,16 @@ span{
 }
 
 
-.form-orcamento{
-
+.form-orcamento {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: black;
     border-radius: 10rem;
+    position: relative;
+    border: 2px solid white;
+    box-shadow: 0 0 0 10px white;
 }
+
 
 
 .campo {

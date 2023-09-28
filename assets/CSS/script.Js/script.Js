@@ -9,22 +9,24 @@ const campoJs = document.querySelector("#js")
 const campoPrazo = document.querySelector("#prazo")
 
 
-campoPrazo.addEventListener("Input", function () {
+
+campoPrazo.addEventListener("input", function (e) {
     const labelPrazo = document.querySelector("label[for='prazo']")
-    labelPrazo.innerHTML = 'Prazo: ${campoPrazo.value} semanas'
-    calcular()
+    labelPrazo.innerHTML = `Prazo: ${campoPrazo.value} mês (es)`
+    // calcular()
+    let campoValor = e.target.value
+    calcular(campoValor)
 })
 
 
-campoQtde.addEventListener("change", calcular)
+campoQtde.addEventListener("change", (e) => calcular(e.target.value))
 campoTipo.addEventListener("change", calcular)
 campoLayoutSim.addEventListener("change", calcular)
 campoLayoutNao.addEventListener("change", calcular)
 campoJs.addEventListener("change", calcular)
 
-function calcular() {
-    let qtde = campoQtde.value
-    let valor = qtde * 19
+function calcular(campoCalcua) {
+    let valor = campoCalcua * 19 //regra de negocio 
 
     if (campoTipo.value == 1) valor += -2
        
@@ -33,13 +35,13 @@ function calcular() {
        
 
     if (campoJs.checked) valor -= valor * 0.05
-     
 
-    let taxaDeUrgencia = 1 - campoPrazo.value * 0.05
-    valor *= 1 + taxaDeUrgencia
-
-
-    resultado.innerText = 'R$ ${valor}'
-
-    document.getElementById('Resultado').innerText = `R$ ${valor.toFixed(2)}` ;
+    document.querySelector('#Resultado').innerText = `R$ ${valor.toFixed(2)}` ;
 }
+
+
+// let taxaDeUrgencia = 1 - campoPrazo.value * 0.05
+// valor *= 1 + taxaDeUrgencia
+
+
+// // resultado.innerText = 'R$ ${valor}'
