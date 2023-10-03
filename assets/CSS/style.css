@@ -79,7 +79,7 @@ header{
   /*PSEUDO-ELEMENTO*/
   header::before{
     content: '';
-    background-image: url(.images/background.png);
+    background-image: url(./images/background.png);
     background-size: cover;
     height: 100%;
     width: 100%;
